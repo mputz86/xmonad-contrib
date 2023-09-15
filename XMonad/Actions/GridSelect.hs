@@ -51,7 +51,7 @@ module XMonad.Actions.GridSelect (
     stringToRatio,
 
     -- * Navigation Mode assembly
-    TwoD,
+    TwoD (TwoD),
     makeXEventhandler,
     shadowWithKeymap,
 
@@ -78,7 +78,11 @@ module XMonad.Actions.GridSelect (
     -- $screenshots
 
     -- * Types
-    TwoDState,
+    TwoDState(..),
+    TwoDElementMap(..),
+    updateAllElements,
+    grayoutElements,
+    orderElementmap
     ) where
 import Control.Arrow ((***))
 import Data.Bits
